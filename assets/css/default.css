@@ -1,0 +1,132 @@
+
+/* --------->>> 1. LAYOUT <<<--------- */
+
+/* --------->>> 2. NAVIGATION <<<--------- */
+
+/* Default Drupal menu reset... */
+
+ul.menu { list-style:none; }
+
+ul.menu li { list-style-image:none; list-style-type:none; margin:0; padding:0; }
+
+ul.menu li ul { margin-left:10px; }
+
+/* Admin menu v.1.6 */
+
+ul.admin-menu { position:relative; background-color:#222; z-index:9999; }
+
+ul.admin-menu li a { display:block; float:left; height:22px; padding:0 10px; color:#eee; font-size:12px; text-decoration:none; line-height:22px; }
+
+ul.admin-menu li a:hover { text-decoration:underline; }
+
+ul.admin-menu li a.active { color:#fff !important; }
+
+ul.admin-menu ul { top:22px !important; width:auto !important; background-color:#222; }
+
+ul.admin-menu ul li { min-width:180px; }
+
+ul.admin-menu ul li a { float:none; border-bottom:#333 solid 1px; }
+
+ul.admin-menu ul li a:hover { background-color:#111; }
+
+ul.admin-menu ul li.last a,
+ul.admin-menu ul li:last-child a { border:none; }
+
+ul.admin-menu ul li.menuparent > a { background-image:url(../images/admin_menu_menuparent.png); background-position:161px 50%; background-repeat:no-repeat; }
+
+ul.admin-menu ul ul { top:0 !important; left:100% !important; }
+
+/** Extra **/
+
+ul.admin-menu li.sf-depth-2.last { float:right; }
+
+/* --------->>> 3. DRUPAL <<<--------- */
+
+/* UI amends... */
+
+/** Tabs **/
+
+ul.tabs:after { display:block; clear:both; height:0; font-size:0; content:" "; visibility:hidden; }
+
+* html ul.tabs,
+*:first-child+html ul.tabs { zoom:1; }
+
+ul.tabs { margin:0 0 10px; padding:0; border-bottom:#ddd solid 1px; }
+
+ul.tabs li { display:inline; float:left; padding:0; border:none; }
+
+ul.tabs li a { display:block; height:22px; padding:0 10px; font-size:13px; line-height:22px; }
+
+ul.tabs.primary li a { margin-right:2px; border:#ddd solid 1px; border-bottom:none; background-color:#eee; }
+
+ul.tabs.primary li a.active { background-color:#fff; color:#000 !important; }
+
+ul.tabs.secondary li a.active { border-bottom:#ddd solid 4px; color:#000 !important; }
+
+/* --------->>> 4. HTML ELEMENTS <<<--------- */
+
+a { }
+
+a:hover { }
+
+a.active { }
+
+blockquote { }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin-bottom:10px; }
+
+h1#page-title { }
+
+p { margin-bottom:10px; }
+
+table { width:100%; }
+
+/* Forms */
+
+input,
+textarea { font:normal 13px Arial, Helvetica, sans-serif; }
+
+input[type="email"],
+input[type="text"],
+input[type="password"] { padding:4px; border:#ddd solid 1px; }
+
+textarea { border:#ddd solid 1px; }
+
+/* Blocks */
+
+/* Nodes */
+
+.node b,
+.node strong { font-weight:bold; }
+
+.node table { margin-bottom:10px; }
+
+.node table th,
+.node table td { padding:4px; }
+
+.node table th { padding-right:4px; border-bottom:#ddd solid 2px; color:#555; font-weight:bold; }
+
+.node table td { border-bottom:#ddd solid 1px; }
+
+.node table tr.odd td { background-color:#f3f3f3; }
+
+.node table tr.even td { background-color:#e3e3e3; }
+
+.node table tbody { border-top:#ddd solid 2px; }
+
+.node ol,
+.node ul { margin:0 0 10px 40px; }
+
+.node ol li,
+.node ul li { margin:4px 0; }
+
+.node ol li { list-style:decimal; }
+
+.node ul li { list-style:square; }
+
+/* Views */

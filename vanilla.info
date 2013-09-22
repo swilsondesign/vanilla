@@ -1,0 +1,7 @@
+name = Vanilla
+description = Vanilla base theme
+version = 0.1
+core = 7.x
+
+stylesheets[all][] = assets/css/reset.css
+stylesheets[all][] = assets/css/default.css
