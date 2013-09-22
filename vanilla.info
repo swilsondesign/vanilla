@@ -3,5 +3,21 @@ description = Vanilla base theme
 version = 0.1
 core = 7.x
 
+; Regions
+regions[top] = Top
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer] = Footer
+regions[bottom] = Bottom
+
+; Stylesheets
 stylesheets[all][] = assets/css/reset.css
 stylesheets[all][] = assets/css/default.css
+stylesheets[all][] = assets/css/admin_menu.css
+
+; Scripts
+scripts[] = assets/js/html5shiv.js

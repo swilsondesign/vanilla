@@ -1,9 +1,11 @@
 
 /* --------->>> 1. LAYOUT <<<--------- */
 
-/* --------->>> 2. NAVIGATION <<<--------- */
+#page { width:940px; margin:0 auto; }
 
-/* Default Drupal menu reset... */
+/* --------->>> 2. DRUPAL <<<--------- */
+
+/* Menu reset */
 
 ul.menu { list-style:none; }
 
@@ -11,40 +13,7 @@ ul.menu li { list-style-image:none; list-style-type:none; margin:0; padding:0; }
 
 ul.menu li ul { margin-left:10px; }
 
-/* Admin menu v.1.6 */
-
-ul.admin-menu { position:relative; background-color:#222; z-index:9999; }
-
-ul.admin-menu li a { display:block; float:left; height:22px; padding:0 10px; color:#eee; font-size:12px; text-decoration:none; line-height:22px; }
-
-ul.admin-menu li a:hover { text-decoration:underline; }
-
-ul.admin-menu li a.active { color:#fff !important; }
-
-ul.admin-menu ul { top:22px !important; width:auto !important; background-color:#222; }
-
-ul.admin-menu ul li { min-width:180px; }
-
-ul.admin-menu ul li a { float:none; border-bottom:#333 solid 1px; }
-
-ul.admin-menu ul li a:hover { background-color:#111; }
-
-ul.admin-menu ul li.last a,
-ul.admin-menu ul li:last-child a { border:none; }
-
-ul.admin-menu ul li.menuparent > a { background-image:url(../images/admin_menu_menuparent.png); background-position:161px 50%; background-repeat:no-repeat; }
-
-ul.admin-menu ul ul { top:0 !important; left:100% !important; }
-
-/** Extra **/
-
-ul.admin-menu li.sf-depth-2.last { float:right; }
-
-/* --------->>> 3. DRUPAL <<<--------- */
-
-/* UI amends... */
-
-/** Tabs **/
+/* Tabs */
 
 ul.tabs:after { display:block; clear:both; height:0; font-size:0; content:" "; visibility:hidden; }
 
@@ -63,7 +32,7 @@ ul.tabs.primary li a.active { background-color:#fff; color:#000 !important; }
 
 ul.tabs.secondary li a.active { border-bottom:#ddd solid 4px; color:#000 !important; }
 
-/* --------->>> 4. HTML ELEMENTS <<<--------- */
+/* --------->>> 3. HTML ELEMENTS <<<--------- */
 
 a { }
 
@@ -91,9 +60,7 @@ table { width:100%; }
 input,
 textarea { font:normal 13px Arial, Helvetica, sans-serif; }
 
-input[type="email"],
-input[type="text"],
-input[type="password"] { padding:4px; border:#ddd solid 1px; }
+input.form-text { padding:4px; border:#ddd solid 1px; }
 
 textarea { border:#ddd solid 1px; }
 
