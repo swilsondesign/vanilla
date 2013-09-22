@@ -1,0 +1,4 @@
+vanilla
+=======
+
+Vanilla Drupal theme
