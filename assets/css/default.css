@@ -1,7 +1,7 @@
 
 /* --------->>> 1. LAYOUT <<<--------- */
 
-#page { width:940px; margin:0 auto; }
+#page { margin:0 auto; }
 
 /* --------->>> 2. DRUPAL <<<--------- */
 
@@ -47,18 +47,15 @@ h2,
 h3,
 h4,
 h5,
-h6 { margin-bottom:10px; }
-
-h1#page-title { }
-
-p { margin-bottom:10px; }
+h6,
+p { margin-top:0; margin-bottom:10px; }
 
 table { width:100%; }
 
 /* Forms */
 
 input,
-textarea { font:normal 13px Arial, Helvetica, sans-serif; }
+textarea { font-size:13px; }
 
 input.form-text { padding:4px; border:#ddd solid 1px; }
 
@@ -70,6 +67,8 @@ textarea { border:#ddd solid 1px; }
 
 .node b,
 .node strong { font-weight:bold; }
+
+.node img { display:block; }
 
 .node table { margin-bottom:10px; }
 
@@ -87,7 +86,7 @@ textarea { border:#ddd solid 1px; }
 .node table tbody { border-top:#ddd solid 2px; }
 
 .node ol,
-.node ul { margin:0 0 10px 40px; }
+.node ul { margin:0 0 20px 40px; padding:0; }
 
 .node ol li,
 .node ul li { margin:4px 0; }

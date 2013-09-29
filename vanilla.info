@@ -15,9 +15,16 @@ regions[footer] = Footer
 regions[bottom] = Bottom
 
 ; Stylesheets
-stylesheets[all][] = assets/css/reset.css
+stylesheets[all][] = assets/css/normalize.css
 stylesheets[all][] = assets/css/default.css
 stylesheets[all][] = assets/css/admin_menu.css
 
 ; Scripts
 scripts[] = assets/js/html5shiv.js
+
+; Theme specific settings
+settings[vanilla_breadcrumb] = 1
+settings[vanilla_breadcrumb_separator] = »
+settings[vanilla_breadcrumb_home] = 1
+settings[vanilla_breadcrumb_title] = 1
+settings[clear_registry] = 0
