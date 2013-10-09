@@ -52,9 +52,8 @@ table { width:100%; }
 input,
 textarea { font-size:13px; }
 
-input.form-text { padding:4px; border:#ddd solid 1px; }
-
-textarea { border:#ddd solid 1px; }
+input.form-text,
+textarea { padding:4px; border:#ddd solid 1px; }
 
 /* Blocks */
 
