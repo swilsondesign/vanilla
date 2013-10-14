@@ -39,9 +39,15 @@ function vanilla_form_system_theme_settings_alter(&$form, $form_state) {
     '#title' => t('Append the content title to the end of the breadcrumb'),
     '#default_value' => theme_get_setting('vanilla_breadcrumb_title'),
   );
+  $form['options_settings']['responsive'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Turn responsive stylesheet on/off'),
+    //'#description' =>t(''),
+    '#default_value' => theme_get_setting('responsive'),
+  );
   $form['options_settings']['textarea_grippie'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Turn Drupal\'s textarea resizing off'),
+    '#title' => t('Turn Drupal\'s textarea resizing on/off'),
     //'#description' =>t(''),
     '#default_value' => theme_get_setting('textarea_grippie'),
   );

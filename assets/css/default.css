@@ -1,7 +1,9 @@
 
 /* --------->>> 1. LAYOUT <<<--------- */
 
-#page { margin:0 auto; }
+#page-wrapper { width:960px; margin:0 auto; }
+
+#page { margin:0 10px; }
 
 /* --------->>> 2. DRUPAL <<<--------- */
 

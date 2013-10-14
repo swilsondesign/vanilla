@@ -27,5 +27,6 @@ settings[vanilla_breadcrumb] = 1
 settings[vanilla_breadcrumb_separator] = »
 settings[vanilla_breadcrumb_home] = 1
 settings[vanilla_breadcrumb_title] = 1
-settings[textarea_grippie] = 0
+settings[responsive] = 1
+settings[textarea_grippie] = 1
 settings[clear_registry] = 0

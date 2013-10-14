@@ -77,12 +77,6 @@ function vanilla_breadcrumb($variables) {
   return '';
 }
 
-// Auto-rebuild the theme registry during theme development
-if (theme_get_setting('clear_registry')) {
-  system_rebuild_theme_data();
-  drupal_theme_rebuild();
-}
-
 // Add clearfix to tabs
 function vanilla_menu_local_tasks(&$variables) {
   $output = '';
@@ -103,7 +97,12 @@ function vanilla_menu_local_tasks(&$variables) {
   return $output;
 }
 
-// Turn Drupal's textarea resizing off
+// Turn responsive stylesheet on/off
+if (theme_get_setting('responsive')) {
+  drupal_add_css(drupal_get_path('theme', 'vanilla') . '/assets/css/responsive.css');
+}
+
+// Turn Drupal's textarea resizing on/off
 if (theme_get_setting('textarea_grippie')) {
   function vanilla_textarea($variables) {
     $element = $variables['element'];
@@ -125,4 +124,10 @@ if (theme_get_setting('textarea_grippie')) {
     $output .= '</div>';
     return $output;
   }
+}
+
+// Auto-rebuild the theme registry during theme development
+if (theme_get_setting('clear_registry')) {
+  system_rebuild_theme_data();
+  drupal_theme_rebuild();
 }
