@@ -80,10 +80,10 @@ textarea { padding:4px; border:#ddd solid 1px; }
 .node table tbody { border-top:#ddd solid 2px; }
 
 .node ol,
-.node ul { margin:0 0 20px 40px; padding:0; }
+.node ul { margin:20px 0 20px 40px; padding:0; }
 
 .node ol li,
-.node ul li { margin:4px 0; }
+.node ul li { margin:2px 0; }
 
 .node ol li { list-style:decimal; }
 
